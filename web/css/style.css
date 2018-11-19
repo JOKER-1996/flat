@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'JS Flat';
+  src: url("../fonts/JsFlat/JF-Flat-regular.eot");
+  src: url("../fonts/JsFlat/JF-Flat-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/JsFlat/JF-Flat-regular.woff") format("woff"), url("../fonts/JsFlat/JF-Flat-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F36F4A;
+  font-family: 'JS Flat';
+  font-weight: 400;
+}
+
+.container {
+  width: 380px;
+  min-height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 60px auto 0;
+  cursor: pointer;
+}
+
+.container__location {
+  width: 380px;
+  min-height: 100px;
+  background-color: #620808;
+  color: #ffe9c1;
+}
+
+.container__location--menu {
+  width: 380px;
+  min-height: 100px;
+  display: block;
+}
+
+.container__location--div {
+  border: 2px solid rgba(204, 204, 204, 0.5);
+}
+
+.container__location--div-p {
+  text-align: center;
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+
+.container__music {
+  width: 380px;
+  min-height: 100px;
+  background-color: #a53f3f;
+  color: #f4ce74;
+}
+
+.container__music--menu {
+  width: 380px;
+  min-height: 100px;
+  display: block;
+}
+
+.container__music--div {
+  border: 2px solid rgba(204, 204, 204, 0.5);
+}
+
+.container__music--div-p {
+  padding: 10px 10px 10px 25px;
+}
+
+.container__notic {
+  width: 380px;
+  min-height: 100px;
+  background-color: #f4ce74;
+  color: #620808;
+}
+
+.container__notic--menu {
+  width: 380px;
+  min-height: 100px;
+  display: block;
+}
+
+.container__notic--div {
+  border: 2px solid rgba(204, 204, 204, 0.5);
+}
+
+.container__notic--div-p {
+  padding: 10px 0 0 15px;
+}
+
+.container__books {
+  width: 380px;
+  min-height: 100px;
+  background-color: #ffe9c1;
+  color: #a53f3f;
+}
+
+.container__books--menu {
+  width: 380px;
+  min-height: 100px;
+  display: block;
+}
+
+.container__books--div {
+  border: 2px solid rgba(204, 204, 204, 0.5);
+}
+
+.container__books--div-p {
+  padding: 10px 10px 10px 25px;
+}
+
+.container__tendances {
+  width: 380px;
+  min-height: 100px;
+  background-color: #d5441c;
+  color: #ffe9c1;
+}
+
+.container__tendances--menu {
+  width: 380px;
+  min-height: 100px;
+  display: block;
+}
+
+.container__tendances--div {
+  border: 2px solid rgba(204, 204, 204, 0.5);
+}
+
+.container__tendances--div-p {
+  padding: 10px 10px 10px 25px;
+}
+
+.container img {
+  margin: 30px 0 0 30px;
+  float: left;
+}
+
+.container h1 {
+  font-size: 24.01px;
+  font-weight: 400;
+  padding: 40px 0 0 0;
+  margin-left: 110px;
+}
+
+.container p {
+  font-size: 16.26px;
+  font-weight: 400;
+  min-height: 160px;
+  line-height: 29px;
+}
+
+.container--div {
+  width: 380px;
+  min-height: 160px;
+  background-color: inherit;
+}
+
+#notesDiv, #locationDiv, #musicDiv, #booksDiv, #tendancesDiv {
+  display: none;
+}

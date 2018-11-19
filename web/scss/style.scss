@@ -1,0 +1,161 @@
+@import 'mixins';
+@import 'variable';
+@import 'font';
+
+
+body {
+	margin: 0;
+	padding: 0;
+	@include bgCol($bgc);
+	font-family: 'JS Flat';
+	font-weight: 400;
+}
+
+.container {
+	@include w(380px);
+	min-height: 500px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 60px auto 0;
+	cursor: pointer;
+	
+	&__location {
+		@include w(380px);
+		min-height: 100px;
+		@include bgCol($darkRed);
+		color: $lightYellow;
+		
+		&--menu {
+			@include w(380px);
+			min-height: 100px;
+			display: block;
+		}
+
+		&--div {
+			border: 2px solid rgba($gray, .5);
+			
+			&-p {
+				text-align: $tac;	
+				padding-top: 20px;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	&__music {
+		@include w(380px);
+		min-height: 100px;
+		@include bgCol($mediumRed);
+		color: $mediumYellow;
+		
+		&--menu {
+			@include w(380px);
+			min-height: 100px;
+			display: block;
+		}
+
+		&--div {
+			border: 2px solid rgba($gray, .5);
+			
+			&-p {
+				padding: 10px 10px 10px 25px;
+			}
+		}
+	}
+
+	&__notic {
+		@include w(380px);
+		min-height: 100px;
+		@include bgCol($mediumYellow);
+		color: $darkRed;
+		
+		&--menu {
+			@include w(380px);
+			min-height: 100px;
+			display: block;
+		}
+
+		&--div {
+			border: 2px solid rgba($gray, .5);
+
+			&-p {
+				padding: 10px 0 0 15px;
+			}
+		}
+	}
+
+	&__books {
+		@include w(380px);
+		min-height: 100px;
+		@include bgCol($lightYellow);
+		color: $mediumRed;
+		
+		&--menu {
+			@include w(380px);
+			min-height: 100px;
+			display: block;
+		}
+
+		&--div {
+			border: 2px solid rgba($gray, .5);
+		
+			&-p {
+				padding: 10px 10px 10px 25px;
+			}
+		}
+	}
+
+	&__tendances {
+		@include w(380px);
+		min-height: 100px;
+		@include bgCol($lightRed);
+		color: $lightYellow;
+		
+		&--menu {
+			@include w(380px);
+			min-height: 100px;
+			display: block;
+		}
+
+		&--div {
+			border: 2px solid rgba($gray, .5);
+			
+			&-p {
+				padding: 10px 10px 10px 25px;
+			}
+		}
+	}
+
+	& img {
+		margin: 30px 0 0 30px;
+		float: left;
+	}
+	
+	& h1 {
+		font-size: 24.01px;
+		font-weight: 400;
+		padding: 40px 0 0 0;
+		margin-left: 110px;
+	}
+
+	& p {
+		font-size: 16.26px;
+		font-weight: 400;
+		
+		min-height: 160px;
+		@include lH(29px);
+	}
+
+	&--div {
+		@include w(380px);
+		min-height: 160px;
+		@include bgCol(inherit);
+	}
+}
+
+#notesDiv, #locationDiv, #musicDiv, #booksDiv, #tendancesDiv {
+	display: none;
+}
